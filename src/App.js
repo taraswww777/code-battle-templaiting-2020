@@ -4,6 +4,7 @@ import {Header} from "./components/header/Header";
 import {FirstScreen} from "./components/screens/first-screen/FirstScreen";
 import {SecondScreen} from "./components/screens/second-screen/SecondScreen";
 import {FeaturesScreen} from "./components/screens/features-screen/FeaturesScreen";
+import {ContentsScreen} from "./components/screens/contents-screen/ContentsScreen";
 
 export const App = () => {
     return (
@@ -19,6 +20,9 @@ export const App = () => {
             </div>
             <div>
                 <FeaturesScreen/>
+            </div>
+            <div>
+                <ContentsScreen/>
             </div>
         </div>
     );

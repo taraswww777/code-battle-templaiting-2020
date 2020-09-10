@@ -1,0 +1,36 @@
+@import '../../../libs/foundation';
+@import '../../../constants';
+
+.contents-screen {
+  padding: 50px 0;
+
+  &__container {
+    @include xy-grid-container();
+    @include xy-grid();
+    justify-content: center;
+  }
+
+  &__title {
+    @include xy-cell(12);
+    font-size: 52px;
+    text-align: center;
+  }
+
+  &__description {
+    @include xy-cell(12);
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  &__pages {
+    @include xy-cell(12);
+    @include xy-grid();
+
+    justify-content: center;
+  }
+
+  &__page {
+    @include xy-cell(5);
+  }
+}

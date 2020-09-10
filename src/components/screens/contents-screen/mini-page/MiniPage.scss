@@ -1,0 +1,31 @@
+@import '../../../../libs/foundation';
+@import '../../../../constants';
+@import '../../../../mixins';
+
+.mini-page {
+  @include xy-grid();
+  background: #fff;
+  border-radius: 10px;
+  color: #000000;
+  text-align: center;
+  padding: 50px;
+
+  &__title {
+    @include xy-cell(12);
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    @include xy-cell(12);
+    color: #5C5C5C;
+    margin: 20px 0;
+  }
+
+  &__btn {
+    @include xy-cell(12);
+  }
+
+  &__img {
+  }
+}
