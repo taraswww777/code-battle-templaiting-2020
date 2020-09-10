@@ -1,0 +1,24 @@
+@import '../../constants';
+@import '../../libs/foundation';
+
+.menu {
+  &__list {
+    @include menu-base();
+  }
+
+  &__item {
+    margin: 10px 0;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+    color: $COLOR_WHITE;
+
+    &:hover {
+      text-decoration: none;
+      color: $COLOR_GREEN;
+    }
+  }
+}

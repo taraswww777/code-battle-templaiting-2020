@@ -1,0 +1,21 @@
+@import '../../libs/foundation';
+
+.header {
+  &__container {
+    @include xy-grid-container();
+    @include xy-grid();
+    align-items: center;
+  }
+
+  &__logo {
+    @include xy-cell(2);
+  }
+
+  &__menu {
+    @include xy-cell(8);
+  }
+
+  &__login {
+    @include xy-cell(2);
+  }
+}
