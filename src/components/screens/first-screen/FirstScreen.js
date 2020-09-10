@@ -1,7 +1,7 @@
 import React from 'react';
 import './FirstScreen.scss';
-import {BtnBlue} from "../btns/btn-blue/BtnBlue";
-import {BtnWhite} from "../btns/btn-white/BtnWhite";
+import {BtnBlue} from "../../btns/btn-blue/BtnBlue";
+import {BtnWhite} from "../../btns/btn-white/BtnWhite";
 
 export const FirstScreen = () => {
     return (

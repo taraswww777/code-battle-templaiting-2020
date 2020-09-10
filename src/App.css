@@ -1,7 +1,8 @@
 body, html {
     background: #181818;
     color: #FFFFFF;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
 }
 
 .App {

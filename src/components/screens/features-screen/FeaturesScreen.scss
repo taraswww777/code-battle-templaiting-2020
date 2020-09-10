@@ -1,0 +1,76 @@
+@import '../../../libs/foundation';
+@import '../../../constants';
+
+.features-screen {
+  padding: 50px 0;
+
+  &__container {
+    @include xy-grid-container();
+    @include xy-grid();
+    justify-content: center;
+  }
+
+  &__title {
+    @include xy-cell(12);
+    font-size: 52px;
+    text-align: center;
+  }
+
+  &__description {
+    @include xy-cell(8);
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  &__img {
+    @include xy-cell(8);
+  }
+
+  &__features {
+    @include xy-cell(4);
+  }
+
+  &__list {
+    @include xy-grid();
+  }
+
+  &__item {
+    @include xy-cell(12);
+    margin-bottom: 50px;
+  }
+
+  &__item-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: no-repeat center center;
+    background-size: cover;
+
+    &--infinity {
+      width: 29px;
+      height: 13px;
+      background-image: url('./infinity.svg');
+    }
+
+    &--spoon {
+      width: 24px;
+      height: 24px;
+      background-image: url('./spoon.svg');
+    }
+
+    &--ufo {
+      width: 26px;
+      height: 26px;
+      background-image: url('./ufo.svg');
+    }
+  }
+
+  &__item-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  &__item-description {
+  }
+}
