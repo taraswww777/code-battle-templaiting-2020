@@ -1,21 +1,40 @@
 @import '../../libs/foundation';
+@import '../../constants';
 
-.header {
+.first-screen {
   &__container {
     @include xy-grid-container();
     @include xy-grid();
-    align-items: center;
+    justify-content: center;
   }
 
-  &__logo {
-    @include xy-cell(2);
+  &__title {
+    @include xy-cell(12);
+    font-size: 80px;
+    text-align: center;
   }
 
-  &__menu {
+  &__title-first-word {
+
+  }
+
+  &__title-second-word {
+    color: $COLOR_GREEN
+  }
+
+  &__description {
     @include xy-cell(8);
+    text-align: center;
   }
 
-  &__login {
-    @include xy-cell(2);
+  &__footer {
+    @include xy-cell(12);
+    @include xy-grid();
+    justify-content: center;
+    margin: 30px 0 0;
+  }
+
+  &__btn {
+    margin: 0 15px;
   }
 }

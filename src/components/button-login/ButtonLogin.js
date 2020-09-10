@@ -1,9 +1,7 @@
 import React from 'react';
-import './ButtonLogin.scss';
+import {BtnWhite} from "../btns/btn-white/BtnWhite";
 
 export const ButtonLogin = () => (
-    <button className="button-login">
-        Login
-    </button>
+    <BtnWhite text={'Login'}/>
 );
 

@@ -1,7 +1,7 @@
-@import '../../constants';
-@import '../../libs/foundation';
+@import './constants';
+@import './libs/foundation';
 
-.button-login {
+@mixin btn-base() {
   @include button-base();
   font-weight: 500;
   border: 1px solid $COLOR_WHITE;

@@ -1,0 +1,47 @@
+@import '../../libs/foundation';
+@import '../../constants';
+
+.second-screen {
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    min-height: 551px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0E0E0E 66.15%);
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__container {
+    @include xy-grid-container();
+    @include xy-grid();
+    overflow: hidden;
+  }
+
+  &__content {
+    @include xy-cell(12);
+    position: relative;
+    min-height: 850px;
+  }
+
+  &__boards, &__chatBot, &__dashboard {
+    position: absolute;
+  }
+
+  &__boards {
+    right: 0;
+    transform: translateY(55%) translateX(21%);;
+  }
+
+  &__chatBot {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__dashboard {
+    left: 0;
+    transform: translateY(55%) translateX(-21%);;
+  }
+}

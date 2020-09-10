@@ -1,21 +1,27 @@
 import React from 'react';
-import './Header.scss';
-import {Logo} from "../logo/Logo";
-import {Menu} from "../menu/Menu";
-import {ButtonLogin} from "../button-login/ButtonLogin";
+import './FirstScreen.scss';
+import {BtnBlue} from "../btns/btn-blue/BtnBlue";
+import {BtnWhite} from "../btns/btn-white/BtnWhite";
 
 export const FirstScreen = () => {
     return (
-        <div className="header">
-            <div className="header__container">
-                <div className="header__logo">
-                    <Logo/>
+        <div className="first-screen">
+            <div className="first-screen__container">
+                <div className="first-screen__title">
+                    <div className="first-screen__title-first-word">Work</div>
+                    <div className="first-screen__title-second-word">fast</div>
                 </div>
-                <div className="header__menu">
-                    <Menu items={items}/>
+                <div className="first-screen__description">
+                    Most calendars are designed for teams. Slate is designed for
+                    freelancers who want a simple way to plan their schedule.
                 </div>
-                <div className="header__login">
-                    <ButtonLogin/>
+                <div className="first-screen__footer">
+                    <div className="first-screen__btn">
+                        <BtnBlue text={'Try For Free'}/>
+                    </div>
+                    <div className="first-screen__btn">
+                        <BtnWhite text={'Learn More'}/>
+                    </div>
                 </div>
             </div>
         </div>

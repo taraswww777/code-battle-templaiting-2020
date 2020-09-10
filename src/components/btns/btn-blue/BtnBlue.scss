@@ -1,0 +1,9 @@
+@import '../../../libs/foundation';
+@import '../../../constants';
+@import '../../../mixins';
+
+.btn-blue {
+  @include btn-base();
+  border: 1px solid $COLOR_BLUE;
+  background: $COLOR_BLUE;
+}
